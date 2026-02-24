@@ -1,3 +1,9 @@
+import os
+
+print("TOKEN:", os.getenv("TOKEN"))
+print("ENV KEYS:", list(os.environ.keys()))
+
+exit()
 """
 ╔══════════════════════════════════════════════════════════════════════════════╗
 ║          ✦  CodeParis AI Bot  ✦   v5.0                                       ║
