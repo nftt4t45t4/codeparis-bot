@@ -1,6 +1,0 @@
-[phases.setup]
-nixPkgs = ["fonts-dejavu", "fontconfig"]
-aptPkgs = ["fonts-dejavu-core", "fonts-dejavu-extra", "libfreetype6"]
-
-[start]
-cmd = "python bot.py"
