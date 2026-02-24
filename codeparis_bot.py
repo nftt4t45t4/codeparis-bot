@@ -1,9 +1,19 @@
 import os
+import discord
+from discord.ext import commands
 
-print("TOKEN:", os.getenv("TOKEN"))
-print("ENV KEYS:", list(os.environ.keys()))
+intents = discord.Intents.all()
+bot = commands.Bot(command_prefix="!", intents=intents)
 
-exit()
+# ----- ВСЯ ЛОГИКА БОТА -----
+
+TOKEN = os.getenv("TOKEN")
+
+if not TOKEN:
+    print("❌ Укажи TOKEN!")
+    exit()
+
+bot.run(TOKEN)
 """
 ╔══════════════════════════════════════════════════════════════════════════════╗
 ║          ✦  CodeParis AI Bot  ✦   v5.0                                       ║
